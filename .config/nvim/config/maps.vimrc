@@ -2,8 +2,8 @@
 let mapleader=" " " Map <space> to leader
 :imap jk <Esc>
 inoremap <leader>; <C-o>A;
-nmap <silent> <leader>ev :vsplit ~/config/nvim/init.vim<CR>
-nmap <silent> <leader>sv :source ~/config/nvim/init.vim<CR>
+nmap <silent> <leader>ev :vsplit ~/.config/nvim/init.vim<CR>
+nmap <silent> <leader>sv :source ~/.config/nvim/init.vim<CR>
 map <D> <C>
 
 " =========== Navigation ===========
