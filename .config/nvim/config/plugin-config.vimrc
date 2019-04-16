@@ -77,6 +77,6 @@ let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_
 let g:UltiSnipsUsePythonVersion = 3
 
 " Define directory for private snippets
-let g:UltiSnipsSnippetsDir = '~/config/nvim/ultisnips/'
-let g:UltiSnipsSnippetDirectories = [$HOME.'/config/nvim/ultisnips']
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/ultisnips/'
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/ultisnips']
 let g:UltiSnipsEditSplit="context"

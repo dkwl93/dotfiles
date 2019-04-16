@@ -46,7 +46,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 " =========== UltiSnips ===========
 " Trigger key
-let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsExpandTrigger="<C-l>"
 
 " =========== VimWiki ===========
 " CMD + D to insert date
