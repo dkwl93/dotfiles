@@ -61,7 +61,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/config/zsh/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
@@ -100,9 +100,6 @@ alias gpl="git pull"
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias cappsp="cd ~/dev/capps/capps-platform/"
-alias cappsr="cd ~/dev/capps/capps-react-app/"
-alias ppay="cd ~/Documents/Pushpay/AndroidClient/android-PushPay"
 alias api25="${HOME}/Library/Android/sdk/tools/emulator -avd Nexus_6P_API_25"
 alias rna="react-native run-android"
 alias rni="react-native run-ios"
@@ -114,17 +111,12 @@ alias srcz="source ~/.zshrc"
 alias dev="cd ~/dev"
 
 # Exports
-export AWS_ACCOUNT="120023305280"
-export LOCAL_DYNAMO_HOST="$HOME/dev/capps/local_dynamodb"
 export ENVIRONMENT="dan-local"
-export RAYGUN_API_KEY="test"
-export APPS_RAYGUN_API_KEY="test"
-export MOBILE_API_URL_BASE="http://localhost:6970"
 export IP_ADDRESS="10.100.11.32"
 export USER=${USER}
 export AGENDA_URL="http://localhost"
-export GIT_EDITOR='vim'
-export REACT_EDITOR='vim'
+export GIT_EDITOR='nvim'
+export REACT_EDITOR='nvim'
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
 export JAVA_HOME="`/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home`"
 
