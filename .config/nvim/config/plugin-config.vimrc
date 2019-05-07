@@ -67,6 +67,8 @@ set signcolumn=yes
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+highlight link CocErrorSign GruvboxRed
+
 " =========== AIRLINE ===========
 " Coc Integration with Airline
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'

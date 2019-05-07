@@ -149,8 +149,8 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 nnoremap <silent> <leader>ca  :<C-u>CocList diagnostics<cr>
 " Manage extensions
 nnoremap <silent> <leader>ce  :<C-u>CocList extensions<cr>
-" Show commands
-nnoremap <silent> <leader>cc  :<C-u>CocList commands<cr>
+" Show commands (Used by nerd commenter)
+" nnoremap <silent> <leader>cc  :<C-u>CocList commands<cr>
 nnoremap <silent> <leader>cg :CocConfig<CR>
 " Find symbol of current document
 nnoremap <silent> <leader>co  :<C-u>CocList outline<cr>

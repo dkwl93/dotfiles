@@ -18,6 +18,8 @@ Plug 'mattn/calendar-vim' " Calendar for vimwiki
 Plug 'prettier/vim-prettier' "Prettier
 Plug 'pangloss/vim-javascript' "VimJS  - for folding
 Plug 'airblade/vim-rooter' " Change working directory
+Plug 'mileszs/ack.vim' " Search
+Plug 'editorconfig/editorconfig-vim' " To read .editorconfig
 
 " Snippets and shortcuts
 Plug 'SirVer/ultisnips' " Used for snippet libraries
