@@ -1,14 +1,17 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "javascript.jsx"],
   "tsserver.enableJavascript": false,
   "languageserver": {
     "flow": {
       "command": "./node_modules/.bin/flow",
       "args": ["lsp"],
-      "filetypes": ["javascript", "javascriptreact"],
+      "filetypes": ["javascript", "javascriptreact", "javascript.jsx"],
       "initializationOptions": {},
       "requireRootPattern": true,
       "settings": {},
       "rootPatterns": [".flowconfig"]
     }
-  }
+  },
+  "tslint.jsEnable": true,
+  "tslint.autoFixOnSave": true
 }

@@ -15,7 +15,6 @@ Plug 'mxw/vim-jsx' " VIM-JSX
 Plug 'alvan/vim-closetag' " Vim closetag
 Plug 'vimwiki/vimwiki' " Vim wiki
 Plug 'mattn/calendar-vim' " Calendar for vimwiki
-Plug 'prettier/vim-prettier' "Prettier
 Plug 'pangloss/vim-javascript' "VimJS  - for folding
 Plug 'airblade/vim-rooter' " Change working directory
 Plug 'mileszs/ack.vim' " Search
@@ -34,5 +33,6 @@ Plug 'neoclide/coc-tsserver', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-prettier', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-json', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-tslint-plugin', { 'do': { -> 'yarn install --frozen-lockfile' } }
+Plug 'neoclide/coc-eslint', { 'do': { -> 'yarn install --frozen-lockfile' } }
 
 call plug#end()

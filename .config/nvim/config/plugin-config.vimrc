@@ -69,6 +69,9 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 highlight link CocErrorSign GruvboxRed
 
+" Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " =========== AIRLINE ===========
 " Coc Integration with Airline
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
