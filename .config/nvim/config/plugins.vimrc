@@ -30,9 +30,11 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-snippets', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-yaml', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-tsserver', { 'do': { -> 'yarn install --frozen-lockfile' } }
-Plug 'neoclide/coc-prettier', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-json', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-tslint-plugin', { 'do': { -> 'yarn install --frozen-lockfile' } }
 Plug 'neoclide/coc-eslint', { 'do': { -> 'yarn install --frozen-lockfile' } }
+
+" COC extensions installed via :CocInstall plugin_name
+" coc-prettier
 
 call plug#end()
