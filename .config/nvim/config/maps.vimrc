@@ -6,6 +6,10 @@ nmap <silent> <leader>ev :vsplit ~/.config/nvim/init.vim<CR>
 nmap <silent> <leader>sv :source ~/.config/nvim/init.vim<CR>
 map <D> <C>
 
+" Move sanely through wrapped lines
+nnoremap j gj
+nnoremap k gk
+
 " =========== Navigation ===========
 " Easymotion
 map  / <Plug>(easymotion-sn)
