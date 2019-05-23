@@ -2,8 +2,9 @@
 call plug#begin('~/.vim/plugged')
 " Appearance
 Plug 'morhetz/gruvbox' "Theme
-Plug 'ctrlpvim/ctrlp.vim' " File Navigation
 Plug 'scrooloose/nerdtree' " File Tree
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter' " Comment Tools
 Plug 'bling/vim-airline' " Bottom Status Bar
 Plug 'tpope/vim-fugitive' " Git Wrapper
@@ -19,6 +20,7 @@ Plug 'pangloss/vim-javascript' "VimJS  - for folding
 Plug 'airblade/vim-rooter' " Change working directory
 Plug 'mileszs/ack.vim' " Search
 Plug 'editorconfig/editorconfig-vim' " To read .editorconfig
+Plug 'lilydjwg/colorizer' " Color hex
 
 " Snippets and shortcuts
 Plug 'SirVer/ultisnips' " Used for snippet libraries

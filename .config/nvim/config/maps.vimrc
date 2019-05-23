@@ -70,8 +70,7 @@ map <leader>wk <C-w>k
 map <leader>wl <C-w>l
 
 " P - Project
-map <leader>pf <C-p> 
-map <leader>pc :CtrlPClearAllCaches<CR>
+map <C-p> :FZF<CR>
 
 " F - File
 map <leader>fs :w<CR>

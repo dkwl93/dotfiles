@@ -147,3 +147,7 @@ ZSH_HIGHLIGHT_PATTERNS=('rm -rf *', 'fg=white,bold,bg=red')
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# https://github.com/junegunn/fzf.vim/issues/469
+# FZF.Vim ignore node_modules
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'

@@ -5,15 +5,43 @@ let g:vimwiki_list = [{'path': $HOME.'/vimwiki', 'syntax': 'markdown', 'ext': '.
 " ========== vim-rooter ==========
 let g:rooter_patterns = ['.git/', 'package.json'] " How to find project root
 let g:rooter_resolve_links = 1 " Resolve symlinks
+
+" ========== FZF ==========
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+"
+" Default fzf layout
+" - down / up / left / right
+let g:fzf_layout = { 'down': '~40%' }
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+" Enable per-command history.
+" CTRL-N and CTRL-P will be automatically bound to next-history and
+" previous-history instead of down and up. If you don't like the change,
+" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
  
 " ========== Nerdtree Settings ==========
 autocmd VimEnter * NERDTree
-let g:ctrlp_dont_split = 'nerdtree'
 let NERDTreeShowHidden=1
 
-" CtrlP working path
-let g:ctrlp_working_path_mode = 'ra'
-"
 " Vim Close Tag Settings
 let g:closetag_filenames= "*.html,*.xhtml,*.jsx,*.js,*.ts,*.tsx"
 
@@ -38,9 +66,6 @@ if executable('ag')
 
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
 autocmd QuickFixCmdPost *grep* cwindow
