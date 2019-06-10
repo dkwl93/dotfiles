@@ -3,8 +3,8 @@ call plug#begin('~/.vim/plugged')
 " Appearance
 Plug 'morhetz/gruvbox' "Theme
 Plug 'scrooloose/nerdtree' " File Tree
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+Plug '/usr/local/opt/fzf' " Fuzzy finder
+Plug 'junegunn/fzf.vim' " Fuzzy finder plugin for vim
 Plug 'scrooloose/nerdcommenter' " Comment Tools
 Plug 'bling/vim-airline' " Bottom Status Bar
 Plug 'tpope/vim-fugitive' " Git Wrapper

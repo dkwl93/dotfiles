@@ -36,6 +36,7 @@ if has("gui_macvim")
   noremap <D-5> :tabn 5<CR>
   noremap <D-6> :tabn 6<CR>
   noremap <D-7> :tabn 7<CR>
+
   noremap <D-8> :tabn 8<CR>
   noremap <D-9> :tabn 9<CR>
   " Command-0 goes to the last tab
@@ -69,8 +70,13 @@ map <leader>wj <C-w>j
 map <leader>wk <C-w>k
 map <leader>wl <C-w>l
 
+" G - git
+map <leader>gs :Gstatus<CR>
+map <leader>gd :Gdiff<CR>
+map <leader>gb :Gblame<CR>
+
 " P - Project
-map <C-p> :FZF<CR>
+map <C-p> :GFiles<CR>
 
 " F - File
 map <leader>fs :w<CR>
