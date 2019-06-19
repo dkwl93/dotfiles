@@ -1,7 +1,7 @@
 " Install plugins into "plugged" folder
 call plug#begin('~/.vim/plugged')
 " Appearance
-Plug 'morhetz/gruvbox' "Theme
+Plug 'liuchengxu/space-vim-theme' "Theme
 Plug 'scrooloose/nerdtree' " File Tree
 Plug '/usr/local/opt/fzf' " Fuzzy finder
 Plug 'junegunn/fzf.vim' " Fuzzy finder plugin for vim

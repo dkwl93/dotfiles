@@ -9,7 +9,8 @@ autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript
 
 " SKIN
 syntax enable
-colorscheme gruvbox
+colorscheme space_vim_theme
+hi Comment cterm=italic
 set termguicolors
 
 "Tabs to spaces
