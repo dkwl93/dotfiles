@@ -26,6 +26,7 @@ Plug 'lilydjwg/colorizer' " Color hex
 Plug 'SirVer/ultisnips' " Used for snippet libraries
 " Language Stuff
 Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting
+Plug 'jparise/vim-graphql' " GraphQL
 
 " COC extensions
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}

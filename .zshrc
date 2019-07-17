@@ -34,8 +34,10 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+autoload -U promptinit; promptinit
+prompt pure
+
 export ZSH=${HOME}/.oh-my-zsh #Path to your oh-my-zsh installation.  
-ZSH_THEME="robbyrussell" # Set name of theme to load
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
