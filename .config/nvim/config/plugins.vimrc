@@ -1,5 +1,13 @@
+" download vim-plug if we don't have it
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  echo "Downloading vim-plug..."
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | q | source ~/.config/nvim/init.vim
+endif
+
 " Install plugins into "plugged" folder
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 " Appearance
 Plug 'liuchengxu/space-vim-theme' "Theme
 Plug 'scrooloose/nerdtree' " File Tree
@@ -28,16 +36,7 @@ Plug 'SirVer/ultisnips' " Used for snippet libraries
 Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting
 Plug 'jparise/vim-graphql' " GraphQL
 
-" COC extensions
+" COC
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-Plug 'neoclide/coc-snippets', { 'do': { -> 'yarn install --frozen-lockfile' } }
-Plug 'neoclide/coc-yaml', { 'do': { -> 'yarn install --frozen-lockfile' } }
-Plug 'neoclide/coc-tsserver', { 'do': { -> 'yarn install --frozen-lockfile' } }
-Plug 'neoclide/coc-json', { 'do': { -> 'yarn install --frozen-lockfile' } }
-Plug 'neoclide/coc-tslint-plugin', { 'do': { -> 'yarn install --frozen-lockfile' } }
-Plug 'neoclide/coc-eslint', { 'do': { -> 'yarn install --frozen-lockfile' } }
-
-" COC extensions installed via :CocInstall plugin_name
-" coc-prettier
 
 call plug#end()

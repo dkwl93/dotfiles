@@ -95,6 +95,21 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 highlight link CocErrorSign GruvboxRed
 
+" Set Node path for CoC to install
+let g:coc_node_path = $HOME."/.nvm/versions/node/v10.4.0/bin/node"
+
+" Install these if not already installed
+let g:coc_global_extensions = [
+  \'coc-tsserver',
+  \'coc-snippets',
+  \'coc-yaml',
+  \'coc-json',
+  \'coc-tslint-plugin',
+  \'coc-eslint',
+  \'coc-prettier',
+  \'coc-yank',
+  \]
+
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
