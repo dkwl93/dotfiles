@@ -84,8 +84,8 @@ map <leader>ft <C-n>
 map <leader>fr :NERDTreeFind<CR>
 
 " S - Search
-map <leader>sp :grep 
-map <leader>ss /
+map <leader>sp :Ag<CR> 
+map <leader>sf /
 
 " =========== COC ==========
 " Use tab for trigger completion with characters ahead and navigate.
