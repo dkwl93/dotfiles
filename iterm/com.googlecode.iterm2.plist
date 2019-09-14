@@ -529,9 +529,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-148 1659 1018 447 -378 1050 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-378 1050 2560 1417 -378 1050 2560 1417 </string>
+	<string>0 0 2560 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-378 1997 650 467 -378 1050 2560 1417 </string>
+	<string>0 0 2560 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>54 1164 650 467 -378 1050 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -1184,11 +1184,13 @@
 			<key>Name</key>
 			<string>Dan</string>
 			<key>Non Ascii Font</key>
-			<string>HackNerdFontComplete-Regular 18</string>
+			<string>SourceCodeProForPowerline-Regular 16</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
+			<key>Non-ASCII Ligatures</key>
+			<true/>
 			<key>Normal Font</key>
-			<string>HackNerdFontComplete-Regular 14</string>
+			<string>SourceCodeProForPowerline-Regular 20</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1252,7 +1254,7 @@
 			<key>Use Non-ASCII Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.03</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1266,19 +1268,26 @@
 		<string>3.2.9</string>
 		<string>3.3.2</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Space Mono for Powerline</string>
+		<string>Source Code Pro for Powerline</string>
+		<string>ProFont for Powerline</string>
+		<string>DejaVu Sans Mono for Powerline</string>
+	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{-378, 1050}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{580, 2165}</string>
+		<string>{-1442, 962}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>0CA584F9-3A9E-4DF3-8782-843CA8704ED2</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1778,7 +1787,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession</string>
+				<string>currentSession.path</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1952,19 +1961,19 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>currentSession</string>
 				<key>nonterminalContext</key>
 				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentSession.pid</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
 			</dict>
 		</array>
 		<key>4</key>
@@ -2045,7 +2054,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-28T23:02:15Z</date>
+	<date>2019-08-30T14:10:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
