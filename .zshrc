@@ -129,6 +129,7 @@ alias rnix="react-native run-ios --simulator=\"iPhone X\""
 alias uiautomator="$ANDROID_HOME/tools/bin/uiautomatorviewer"
 alias vw="cd ~/Google\ Drive/vimwiki"
 alias vim="nvim" # Vim points to macvim version
+alias v="nvim"
 alias srcz="source ~/.zshrc"
 
 # Exports
