@@ -8,10 +8,12 @@
 #	 ██████ ██████ ░██  ░██░███   ░░█████
 #	░░░░░░ ░░░░░░  ░░   ░░ ░░░     ░░░░░ 
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # place this after nvm initialization!
 # Autoruns nvm use when .nvmrc available after `cd`
@@ -131,6 +133,7 @@ alias vw="cd ~/Google\ Drive/vimwiki"
 alias vim="nvim" # Vim points to macvim version
 alias v="nvim"
 alias srcz="source ~/.zshrc"
+alias e="emus"
 
 # Exports
 export ENVIRONMENT="dan-local"
@@ -154,3 +157,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # https://github.com/junegunn/fzf.vim/issues/469
 # FZF.Vim ignore node_modules
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
