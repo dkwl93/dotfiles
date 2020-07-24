@@ -37,6 +37,6 @@ Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting
 Plug 'jparise/vim-graphql' " GraphQL
 
 " COC
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 
 call plug#end()

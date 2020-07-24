@@ -96,7 +96,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 highlight link CocErrorSign GruvboxRed
 
 " Set Node path for CoC to install
-let g:coc_node_path = $HOME."/.nvm/versions/node/v10.4.0/bin/node"
+let g:coc_node_path = $HOME."/.nvm/versions/node/v12.7.0/bin/node"
 
 " Install these if not already installed
 let g:coc_global_extensions = [
