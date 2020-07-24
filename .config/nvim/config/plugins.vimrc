@@ -36,6 +36,7 @@ Plug 'SirVer/ultisnips' " Used for snippet libraries
 Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'jparise/vim-graphql' " GraphQL
+Plug 'styled-components/vim-styled-components' "Styled Components
 
 " COC
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
