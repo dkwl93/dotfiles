@@ -45,6 +45,10 @@ let NERDTreeShowHidden=1
 
 " Vim Close Tag Settings
 let g:closetag_filenames= "*.html,*.xhtml,*.jsx,*.js,*.ts,*.tsx"
+let g:closetag_regions =  {
+\ 'typescript.tsx': 'jsxRegion,tsxRegion',
+\ 'javascript.jsx': 'jsxRegion',
+\ }
 
 " vim-javascript
 let g:javascript_plugin_flow = 1
