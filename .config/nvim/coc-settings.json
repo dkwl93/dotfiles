@@ -1,6 +1,7 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "javascript.jsx"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "tsserver.enableJavascript": false,
+  "tsserver.npm": "/usr/local/bin/npm",
   "languageserver": {
     "flow": {
       "command": "./node_modules/.bin/flow",

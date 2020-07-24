@@ -5,7 +5,7 @@ autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
 
 " Explicitly set filetype=typescript for .ts .tsx
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
-autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript
+autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
 
 " SKIN
 syntax enable
