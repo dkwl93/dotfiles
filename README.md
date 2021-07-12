@@ -38,6 +38,7 @@ Dans workstation repo
 * Save changes: `Automatically`
 * Click `Save Now`
 * Restart iTerm
+* Load the dan-iterm-profile.json from `~/` under the profile section
 * You may need to `git restore ~/iterm` to discard changes.
 
 ### BetterTouchTool
