@@ -40,5 +40,6 @@ Plug 'styled-components/vim-styled-components' "Styled Components
 
 " COC
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/jsonc.vim'
 
 call plug#end()

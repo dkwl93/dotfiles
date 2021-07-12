@@ -7,6 +7,10 @@ autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
 
+" Explicitly set filetype=jsonc to supress [json 521] [e] Comments are not
+" permitted in JSON
+autocmd BufNewFile,BufRead *.json setlocal filetype=jsonc
+
 " SKIN
 syntax enable
 colorscheme space_vim_theme
