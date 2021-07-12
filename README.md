@@ -108,6 +108,7 @@ export NVM_DIR="$HOME/.nvm"
    * nvm alias default "$(node --version)"
  
  * npm install --global yarn
+ * Install pure npm install --global pure-prompt
  * yarn global add neovim
  * brew install neovim
  * pip3 install --user neovim
