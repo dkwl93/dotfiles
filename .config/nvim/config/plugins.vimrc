@@ -11,10 +11,10 @@ call plug#begin('~/.config/nvim/plugged')
 " Appearance
 Plug 'liuchengxu/space-vim-theme' "Theme
 Plug 'scrooloose/nerdtree' " File Tree
-Plug '/usr/local/opt/fzf' " Fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Base FZF
 Plug 'junegunn/fzf.vim' " Fuzzy finder plugin for vim
 Plug 'scrooloose/nerdcommenter' " Comment Tools
-Plug 'bling/vim-airline' " Bottom Status Bar
+Plug 'vim-airline/vim-airline' " Bottom Status Bar
 Plug 'tpope/vim-fugitive' " Git Wrapper
 Plug 'tpope/vim-surround' " Surround
 Plug 'airblade/vim-gitgutter' " Diff in gutter
