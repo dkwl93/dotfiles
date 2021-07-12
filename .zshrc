@@ -145,6 +145,8 @@ export REACT_EDITOR='nvim'
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
 export JAVA_HOME="`/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home`"
 
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
 export PATH=${PATH}:${HOME}/Library/Android:${HOME}/Library/Android/sdk/platform-tools
 export PATH=${PATH}:${HOME}/Library/Android/sdk/tools
 export PATH="${PATH}:${JAVA_HOME}/bin"
@@ -157,12 +159,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # https://github.com/junegunn/fzf.vim/issues/469
 # FZF.Vim ignore node_modules
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

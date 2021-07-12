@@ -40,5 +40,5 @@ Plug 'styled-components/vim-styled-components' "Styled Components
 
 " COC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'neoclide/jsonc.vim'
 call plug#end()
