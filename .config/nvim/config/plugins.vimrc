@@ -39,6 +39,6 @@ Plug 'jparise/vim-graphql' " GraphQL
 Plug 'styled-components/vim-styled-components' "Styled Components
 
 " COC
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()
