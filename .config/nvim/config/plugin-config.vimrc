@@ -92,8 +92,14 @@ set updatetime=300
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
-" always show signcolumns
-set signcolumn=yes
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -108,7 +114,6 @@ let g:coc_global_extensions = [
   \'coc-snippets',
   \'coc-yaml',
   \'coc-json',
-  \'coc-tslint-plugin',
   \'coc-eslint',
   \'coc-prettier',
   \'coc-yank',

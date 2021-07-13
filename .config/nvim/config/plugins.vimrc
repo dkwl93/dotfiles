@@ -20,21 +20,20 @@ Plug 'tpope/vim-surround' " Surround
 Plug 'airblade/vim-gitgutter' " Diff in gutter
 Plug 'jiangmiao/auto-pairs' " Auto Pair
 Plug 'easymotion/vim-easymotion' " Easymotion
-Plug 'mxw/vim-jsx' " VIM-JSX
 Plug 'alvan/vim-closetag' " Vim closetag
 Plug 'vimwiki/vimwiki' " Vim wiki
 Plug 'mattn/calendar-vim' " Calendar for vimwiki
 Plug 'pangloss/vim-javascript' "VimJS  - for folding
 Plug 'airblade/vim-rooter' " Change working directory
-Plug 'mileszs/ack.vim' " Search
 Plug 'editorconfig/editorconfig-vim' " To read .editorconfig
 Plug 'lilydjwg/colorizer' " Color hex
 
 " Snippets and shortcuts
 Plug 'SirVer/ultisnips' " Used for snippet libraries
+
 " Language Stuff
 Plug 'leafgarland/typescript-vim' " Typescript syntax highlighting
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'maxmellon/vim-jsx-pretty' " JSX Syntax Highlighting
 Plug 'jparise/vim-graphql' " GraphQL
 Plug 'styled-components/vim-styled-components' "Styled Components
 

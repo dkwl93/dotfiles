@@ -1,8 +1,8 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "tsserver.enableJavascript": false,
+  "tsserver.enableJavascript": true,
   "tsserver.npm": "/usr/local/bin/npm",
   "languageserver": {},
-  "tslint.jsEnable": true,
-  "tslint.autoFixOnSave": true
+  // Eslint
+  
 }
