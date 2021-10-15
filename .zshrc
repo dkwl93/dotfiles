@@ -133,6 +133,7 @@ alias vim="nvim" # Vim points to macvim version
 alias v="nvim"
 alias srcz="source ~/.zshrc"
 alias e="emus"
+alias g="lazygit"
 
 # Exports
 export ENVIRONMENT="dan-local"
@@ -142,8 +143,7 @@ export AGENDA_URL="http://localhost"
 export GIT_EDITOR='nvim'
 export REACT_EDITOR='nvim'
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
-# Not working for some reason. java_home not found
-# export JAVA_HOME="`/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home`"
+export JAVA_HOME=`/usr/libexec/java_home -v 11.0.12`
 
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
