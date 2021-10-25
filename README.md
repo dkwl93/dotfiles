@@ -113,4 +113,4 @@ export NVM_DIR="$HOME/.nvm"
  * yarn global add neovim
  * brew install neovim
  * pip3 install --user neovim
- * 
+ * brew install pure
