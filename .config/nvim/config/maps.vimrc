@@ -71,9 +71,9 @@ map <leader>wk <C-w>k
 map <leader>wl <C-w>l
 
 " G - git
-map <leader>gs :Gstatus<CR>
-map <leader>gd :Gdiff<CR>
-map <leader>gb :Gblame<CR>
+map <leader>gs :Git status<CR>
+map <leader>gd :Git diff<CR>
+map <leader>gb :Git blame<CR>
 
 " P - Project
 map <C-p> :GFiles<CR>

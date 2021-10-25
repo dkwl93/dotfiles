@@ -119,6 +119,17 @@ let g:coc_global_extensions = [
   \'coc-yank',
   \]
 
+" Use K to show documentation in preview window
+nnoremap <silent> <leader>d :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
